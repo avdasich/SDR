@@ -1,0 +1,32 @@
+build/
+.venv/
+.idea/
+__pycache__/
+*.o
+*.pcm
+*.cf32
+
+# Сборки и записи
+build-*/
+cmake-build-*/
+*.iq
+*.raw
+*.bin
+.DS_Store
+.vscode/
+
+# Локальные зависимости
+/SoapySDR/
+/SoapyPlutoSDR/
+/libiio/
+/libad9361-iio/
+/deps/
+
+# Локальные файлы
+/backups/
+/figures/
+/rx_plot.png
+/README.txt
+/analysis/
+*.json
+*.csv

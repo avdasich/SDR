@@ -1,11 +1,18 @@
 # SDR
 
-Учебные работы с ADALM-Pluto. В каждом отчёте приведены схема, основные настройки, результаты и выводы.
+Лабораторные работы с ADALM-Pluto.
 
-| Недели | Работа | Отчёт |
-|---|---|---|
-| 1–2 | FM-приёмник в GNU Radio Companion | [Открыть отчёт](Week_1-2/README.md) |
-|  3  | Работа с ADALM-Pluto через SoapySDR | [Открыть отчёт](Week_3/README.md) |
+| Неделя | Работа |
+|---|---|
+| 1–2 | [FM-приёмник](Week_1-2/README.md) |
+| 3 | [SoapySDR](Week_3/README.md) |
+| 4 | [Чтение PCM и график I/Q](Week_4/README.md) |
 
+График записи строится через NumPy и Matplotlib:
 
-Отчёт за 1–2 недели посвящён приёму FM-сигнала в GNU Radio. Работа с SoapySDR, временными метками и передачей между двумя Pluto относится к следующим этапам.
+```bash
+python3 -m pip install -r requirements.txt
+python3 plot.py rxdata.pcm --start 10000000 --count 10000
+```
+
+PCM остаются локально и не добавляются в Git.
