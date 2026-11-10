@@ -20,6 +20,7 @@ SoapySDRUtil --find
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python plot.py rxdata.pcm --start 37063000 --count 8000
+.venv/bin/python spectrum.py rxdata.pcm
 ```
 
 В `requirements.txt` только NumPy и Matplotlib.
